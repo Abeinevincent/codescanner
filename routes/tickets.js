@@ -22,9 +22,9 @@ router.get("/:code", async (req, res) => {
 
 router.put("/:code", async (req, res) => {
     try {
-        await models.tickets.update({ TicketStatus: "Used" }, {
+        await models.tickets.update({ status: "Used" }, {
             where: {
-                TicketCode: req.params.code
+                ticketcode: req.params.code
             }
         });
         res.status(200).json("Updated successflly")
