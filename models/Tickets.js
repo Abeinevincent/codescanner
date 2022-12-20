@@ -1,30 +1,18 @@
 module.exports = (sequelize, DataTypes) => {
     const tickets = sequelize.define("tickets", {
-      TicketStatus: {
+      ticketcode: {
         type: DataTypes.STRING
       },
-      TicketCode: {
+      TicketType: {
         type: DataTypes.STRING
       },
-      CodeURL: {
-        type: DataTypes.STRING
-      },
-      TicketCost: {
-        type: DataTypes.NUMBER
-      },
-      EventID: {
-        type: DataTypes.NUMBER
-      },
-      ClientPhone: {
-        type: DataTypes.NUMBER
-      },
-      DatePurchased: {
+      Datecreated: {
         type: DataTypes.DATE
       },
-      TicketClass: {
-        type: DataTypes.NUMBER
+      dateupdated: {
+        type: DataTypes.DATE
       },
-      TicketID: {
+      ticket_id: {
         type: DataTypes.NUMBER,
         primaryKey: true,
       },
