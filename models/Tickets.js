@@ -3,9 +3,6 @@ module.exports = (sequelize, DataTypes) => {
       ticketcode: {
         type: DataTypes.STRING
       },
-      TicketType: {
-        type: DataTypes.STRING
-      },
       Datecreated: {
         type: DataTypes.DATE
       },
